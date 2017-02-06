@@ -10,6 +10,7 @@
   },
   "keywords": ["logging", "sysadmin", "tools", "winston", "journald", "systemd", "log", "logger"],
   "dependencies": {
+    "lodash": "^4.17.4",
     "systemd-journald": "latest"
   },
   "devDependencies": {
