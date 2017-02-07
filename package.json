@@ -1,7 +1,7 @@
 {
   "name": "winston-journald",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A journald transport for winston",
   "author": "Romain CATOIO <catoio.romain@gmail.com>",
   "repository": {
@@ -18,5 +18,6 @@
     "vows": "0.8.x",
     "bluebird": ">=2.10.2 <4.0.0"
   },
-  "main": "./lib/winston-journald"
+  "main": "./lib/winston-journald",
+  "contributors": ["Bryan Burgers <bryan@burgers.io>", "Juergen Fitschen <me@jue.yt>"]
 }
