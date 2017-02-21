@@ -23,7 +23,7 @@ and a File is overkill.
 
   winston.add(winston.transports.Journald, options);
 ```
-
+options parameter (optionnal) can contains 'level' attribute, describing the minimum level used to send logs to journald. For example is you set options.level to 'info' all logs will be sent to journald but the 'debug' ones.
 
 ## Installation
 
