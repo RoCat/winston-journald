@@ -23,7 +23,11 @@ and a File is overkill.
 
   winston.add(winston.transports.Journald, options);
 ```
-options parameter (optionnal) can contains 'level' attribute, describing the minimum level used to send logs to journald. For example is you set options.level to 'info' all logs will be sent to journald but the 'debug' ones.
+
+The `options` parameter (optional) can contain the following attributes:
+* `level`: describing the minimum level used to send logs to journald. For example is you set options.level to `info` all logs will be sent to journald but the `debug` ones.
+* `concatMetaToMessage`: Concatenate the event meta data to the message.
+* `fields`: Default fields passed to [node-sytemd-journald](https://github.com/jue89/node-systemd-journald) when creating a new logger instance. This can be used to set the `SYSLOG_FACILITY` and `SYSLOG_IDENTIFIER` fields.
 
 ## Installation
 
